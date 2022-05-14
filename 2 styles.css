@@ -1,0 +1,22 @@
+body    {background-color: white;}
+h2      {color: blue;}
+p       {color: black;
+        border: 1px solid disscord;
+        margin: 1px;
+        padding: 1px;
+}
+
+<!--
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: black;
+}
+-->
