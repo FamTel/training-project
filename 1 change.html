@@ -3,7 +3,8 @@
 
 
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="1 style.css">
+<title>Re deleted rpoject</title>
 
 </head>
 <body>
@@ -15,11 +16,36 @@
 <br>
 <a href="https://www.w3schools.com">Visit W3Schools</a>
 
+<br><br><br><br>
+
+<img src='C:\Users\Super\Desktop\project\photo.jpg' alt='foto stola' title="foto stola" usemap="#1workmap">
+<map name="#1workmap">
+<area shape="rect" coords="34,44,270,350" alt='pc' href="pc.htm" onclick="PCAlert()" >
+<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm" onclick="PCAlert">
+<area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm" onclick="PCAlert">
 
 
-<pre>
+</map>
 
-<table style="width:100%">
+<script>
+function  PCAlert() {
+alert("Dont touch my PC")
+
+}
+</script>
+
+<!--
+ПЕРВОЕ карооче блять, когда обявляешь функцию, то не забудь в конце названия функции
+поставиить круглые скобки, иначе нихуя работать не будет
+
+
+
+-->
+
+
+
+
+<table style="width:30%">
   <caption>Monylt Savings</caption>
 <!--
   <tr>
@@ -68,18 +94,99 @@
     <td>1</td>
     <td>1</td>
     <td>1</td>
+
+
+
+
+
 </tr>
 
 
 </table>
 
 
-</pre>
+
+<ol type='I' start='50'>
+  <li>first order</li>
+  <li>second order</li>
+  <li>third order</li>
+
+</ol>
+
+<!--
+ol -  обявления списка с описаниями
+
+ul - строка без порядкового номера - просто точка перед словами
+li - строка с порядковым номером
+
+list-style-type - как будут отображаться точки
+
+-->
+
+<ul>
+  <li>cofee</li>
+
+  <li>tea
+    <ul>
+      <li>black tea</li>
+      <li>green tea</li>
+      <li>brown tea</li>
+    </ul>
+  </li>
+<li>Milk</li>
+  <li>cola</li>
+
+</ul>
 
 
 
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
 
 
+<!--
+dl - обявления списка с описаниями
+dt - привязывается к dd
+
+dt - термин
+dd - описание термина
+
+без dd быдет обычный список
+
+
+-->
+
+
+<div class='menu'>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+
+<!--
+если мы хотим сделать вот такую красивую хуйню по типу меню
+то мы все это запихиваем в блок <div class='название класса'>
+и что бы потом в css можно было править конкретно только этй хуйню
+нам нужно перед каждым тегом ставить название класса через точку
+.class li {а тут уже css}
+
+
+-->
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+
+<p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
 
 </body>
 </html>
