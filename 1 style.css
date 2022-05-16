@@ -18,7 +18,7 @@ body {
     overflow: hidden;
     background-color: #333333;
   }
-
+/**/
   .menu  li {
       float: left;
     }
@@ -34,3 +34,69 @@ body {
 .menu  li a:hover {
     background-color: #111111;
   }
+
+  #myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+ #sproject {
+width: 50%;
+height: 400px;
+margin-left: 25%;
+border: 3px solid red;
+ }
+
+
+
+
+  *  {
+      box-sizing: border-box;
+    }
+/*я вообзе хз как эта хуйня работает и зачем нам перед эти звездочка **/
+.top {
+  background-color: grey;
+  padding: 20px;
+  float: top;
+  width: 100%; /* The width is 20%, by default */
+  text-align: center;
+}
+    .left {
+      background-color: #2196F3;
+      padding: 20px;
+      float: left;
+      width: 20%; /* The width is 20%, by default */
+    }
+
+    .main {
+      background-color: #f1f1f1;
+      padding: 20px;
+      float: left;
+      width: 60%; /* The width is 60%, by default */
+    }
+
+    .right {
+      background-color: #04AA6D;
+      padding: 20px;
+      float: left;
+      width: 20%; /* The width is 20%, by default */
+      border-color: red;
+    }
+
+    .bottom {
+      background-color: grey;
+      padding: 20px;
+      float: bottom;
+      width: 100%; /* The width is 20%, by default */
+      text-align: center;
+      text-align:
+    }
+
+    /* Use a media query to add a break point at 800px: */
+    @media screen and (max-width: 800px) {
+      .left, .main, .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+/*и зачем этай хуйня я тоже не ебу*/

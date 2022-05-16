@@ -3,11 +3,312 @@
 
 
 <head>
+
+
+<!--
+<base href="https://www.eblan_company.ru" target="_blank">
+
+я эту хуйню хакоментил что бы сайт нормфункционировал
+
+-->
+
+<!--
+инструктирует браузер относительно полного базового адреса текущего документа.
+Тег <base> предназначен для документов, в которых используется относительный адрес
+и эти документы могут переноситься в другую папку или даже на другой компьютер без потери связи.
+
+Браузер ищет тег <base>, определяет полный адрес документа и корректно загружает его.
+Например, если адрес документа указан как <base href="http://www.megasite.ru/hzchd/">,
+то при добавлении рисунков достаточно использовать относительный адрес <img src="images/labuda.gif">.
+При этом полный путь к изображению будет http://www.megasite.ru/hzchd/images/labuda.gif, что позволяет браузеру всегда находить графический файл, независимо от того,
+где находится текущая веб-страница.
+
+или простыми словами base задает наш ссылку на наш сайт
+что бы все открываемое с нашего сайта точно открывалось
+по типу документов фото и тд
+
+-->
+
+
+
+
+<!--
+мета оч важна и работа ет по следующему прицнипу
+пишем meta и после content
+в мете мы указываем тип значений и описаний нашего сайта
+а в поле контент уже непосредственно значения для меты
+-->
+
+<meta charset="UTF-8">
+<!--
+кодировка которая нужна для браузера что бы онпонимал с какой кодировкой ему работать
+конечно по стандарту используется UTF-8
+но если какой то сайт обновиться или обновиться сам HTML то возможно все пойдет по пизде
+-->
+<meta name="description" content="описание веб страниц">
+<!--
+То, что указано в атрибуте content будет показано на странице с поисковыми результатами
+-->
+<meta name="keywords" content="ключевые слова">
+<!--
+значимость данного тега падает, но некоторые поисковые системы до сих пор именно из данного тега извлекают информацию
+-->
+<meta name="Abstract" content="дополнительное описание веб страницы">
+<!--
+спорный тег, если он нужен то лучше будет скопировать значения из description
+но если не нужен то можно и не писать
+-->
+<meta name="Robots" content="индексация для поисковых роботов">
+<!--
+
+
+index – индексировать данную веб-страницу,
+follow – индексировать все веб-страницы, на которые на данной странице есть ссылки,
+all – две верхние директивы одновременно,
+noindex – не индексировать веб-страницу,
+nofollow – не переходить по ссылкам с данной веб-страницы.
+-->
+
+<meta name="Subject" content="тема веб-страницы">
+<!--
+Этот мета-тег предназначен для того, чтобы задавать тип данных, представленных на этой веб-странице.
+По идее, основываясь на данном описании, робот поисковиков должен поместить вашу веб-страницу в ту или иную категорию.
+К большому сожалению, каждый поисковик имеет собственно разработанную систему классификации веб-страниц.
+-->
+
+
+<meta name="Page-type" content="тема веб-страницы">
+<!--
+функционал subject и page-type полностью совпадают по этому можно просто копировать значения из content
+-->
+<meta name="Title" content="заголовок веб-страницы">
+<meta name="Page-topic" content="заголовок веб-страницы">
+<!--
+такая же одинаковая хуйня
+-->
+<meta name="Revisit" content="кол-во дней">
+<!--
+Если информация на вашем сайте часто обновляется, то этот мета-тег очень важен для вас.
+Он информирует роботов поисковых систем, через сколько дней им следует переиндексировать данную веб-страницу.
+Существует альтернативный мета-тег – revisit-after, который полностью идентичен данному мета-тегу, однако используется реже.
+-->
+<meta name="author" content="John Doe">
+
+
+<!--
+типо указываетя автор, наверное нужно для блогов и индексации по людяи
+
+-->
+<meta http-equiv="refresh" content="120">
+<!--как часто будет обновляться сайт-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+вот эта хуйня очень важна
+если не будет написанна то сайт будет отображаться на телефоне как кусок говна из 2010
+а если поставил то ты молодец держри пирожок и глазам будет приятно
+
+-->
+
+
   <link rel="stylesheet" href="1 style.css">
 <title>Re deleted rpoject</title>
 
+<!--
+head идет до body после обявления html
+
+title - это как будет называться наш сайт во вкладке
+и как он будет показыватсья в поиске в браузере
+
+также style обявляется после title в head
+ style - как корманный css, но для удобства лучше будет делать на него ссылку
+
+
+
+-->
+
+
 </head>
 <body>
+
+
+<h1 id="myHeader">My Header</h1>
+
+<a href='#end'>Jump in the void</a>
+
+<br>
+
+
+<iframe src='C:\Users\Super\Desktop\project\2 index.html' title='another project' id='sproject' name="fproject">
+</iframe>
+
+<!--
+ifreame - показываем сайт в сайте что бы ты видел сайт пока смотришь сайт
+title тут не знаю нахуя, но пусть будет
+id нужен что бы потом его красиов офосрить и тд
+name - что бы к этой залупе потом обращаться можно было
+
+тут как и с картинкой нужно писать сурс=src что бы iframe знал откуда что береться
+
+при чем браться эта дупа будет из нашего же проекта
+
+
+
+-->
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+<!--
+кароче picture
+
+контейнер исопльзуется для фоток для разных устройств
+он открывается и закрывается
+
+внутри мы пишем ресурс для каждого устройства
+указывая для какого девайса какое фото будет показанно
+
+пишем сурс и в нем обьединенный src и set
+это мы сложно указываем фотку
+
+потом в медиа уже непосрежственно пишем для какой ширины пикселей все это будет показываться
+
+-->
+
+<h1 style="font-size:1vw">Hello World</h1>
+<!--
+как обычно пишем заголовок
+да только вот размер шрифта у нас идет не как обычно в пикселлях или процентах
+а в view-width(vw) - показываемая ширина
+это уже отношение к экрану
+
+-->
+<br>
+
+<div class="top"><p>top menu</p></div>
+<div class="left"><p>left menu</p></div>
+<div class="main"><p>main menu</p></div>
+<div class="right"><p>right menu</p></div>
+<div class="bottom"><p>bottom menu</p></div>
+
+<br>
+<br><br>
+
+
+
+<!--
+можно этот iframe менять за счет ссылок
+и по сути мы пишет ссылку  href  типо на чтор у нас iframe менять будет
+а также target типо что оно будет менять
+-->
+
+<br><br><br><br><br><br><br><br>
+
+
+
+<p id="demo">srdhgreh</p>
+
+<script>
+function newchange(){
+document.getElementById("demo").innerHTML = "Hello JavaScript!";}
+</script>
+
+<noscript>sorry, you are dolbaeb</noscript>
+<button onclick="newchange()">change text</button>
+
+
+
+<!--
+запускать JavaScript и функцию от него можно как при нажатии кнопкой так и автоматически
+
+через кнопку пример выше
+
+а если автоматически
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+ноу скрипт нужен на всякий случай если пользователь добаеб и или его браузер хуйня и нужно показать что все хуйня
+
+
+
+
+
+-->
+
+<br>
+
+<img src="https://www.w3schools.com/images/picture.jpg" title="Mountain" alt="Mountain">
+
+<h1>описание фоток</h1>
+
+<!--
+<img src="picture.jpg">	фото лежит в том же каталоге где и данная страница
+<img src="images/picture.jpg">	фото лежит в папке images там же где и текущая страцица
+<img src="/images/picture.jpg">	если в начале стоит / то путь будет указываться от корня текущего сайта
+<img src="../picture.jpg"> фото лежит в каталоге на уровень вверх
+<img src="https://www.w3schools.com/images/picture.jpg"> тут уже понятно, картинка будет браться из инета
+
+также можно дописать style='max-width:100%; height:auto;'
+получается следующая штука
+
+из ха максимальной ширины на всех устройствах оно будет максимально растянуто
+но типо по ширине, но что бы фотка не растягивалась в гавно, ставиться высота auto
+пи тогда она будет растянута по ширине, но высота будет ок
+-->
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+
+
+
+
+<br><br><br><br><br><br><br><br>
+<h1 id="firstid">Hello everyone</h1>
+
+<button onclick="change_text()">Suicide</button>
+
+<script>
+function change_text() {
+document.getElementById("firstid").innerHTML = "Goodbye world";
+}
+</script>
+
+
+<button onclick="de_change_text()">De Suicide</button>
+
+<script>
+function de_change_text() {
+document.getElementById("firstid").innerHTML = "Hello everyone";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <h1>My First Heading</h1>
 <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
@@ -187,6 +488,18 @@ dd - описание термина
 
 
 <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+<!--
+span предназначен для выделения конкретных элементов в параграфе
+и их стилизации
+
+
+-->
+
+
+
+
+<h3 id='end'>THE END</h3>
+
 
 </body>
 </html>
