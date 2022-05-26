@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+
+<!--
+<base href="https://www.eblan_company.ru" target="_blank">
+
+я эту хуйню хакоментил что бы сайт нормфункционировал
+
+-->
+
+<!--
+инструктирует браузер относительно полного базового адреса текущего документа.
+Тег <base> предназначен для документов, в которых используется относительный адрес
+и эти документы могут переноситься в другую папку или даже на другой компьютер без потери связи.
+
+Браузер ищет тег <base>, определяет полный адрес документа и корректно загружает его.
+Например, если адрес документа указан как <base href="http://www.megasite.ru/hzchd/">,
+то при добавлении рисунков достаточно использовать относительный адрес <img src="images/labuda.gif">.
+При этом полный путь к изображению будет http://www.megasite.ru/hzchd/images/labuda.gif, что позволяет браузеру всегда находить графический файл, независимо от того,
+где находится текущая веб-страница.
+
+или простыми словами base задает наш ссылку на наш сайт
+что бы все открываемое с нашего сайта точно открывалось
+по типу документов фото и тд
+
+-->
+
+
+
+
+<!--
+мета оч важна и работа ет по следующему прицнипу
+пишем meta и после content
+в мете мы указываем тип значений и описаний нашего сайта
+а в поле контент уже непосредственно значения для меты
+-->
+
+<meta charset="UTF-8">
+<!--
+кодировка которая нужна для браузера что бы онпонимал с какой кодировкой ему работать
+конечно по стандарту используется UTF-8
+но если какой то сайт обновиться или обновиться сам HTML то возможно все пойдет по пизде
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+и вот эту хуйню можно тоже сюда вписывать что бы браузер нормально скейлил твой сайт
+
+
+-->
+
+<meta name="description" content="описание веб страниц">
+<!--
+То, что указано в атрибуте content будет показано на странице с поисковыми результатами
+-->
+<meta name="keywords" content="ключевые слова">
+<!--
+значимость данного тега падает, но некоторые поисковые системы до сих пор именно из данного тега извлекают информацию
+-->
+<meta name="Abstract" content="дополнительное описание веб страницы">
+<!--
+спорный тег, если он нужен то лучше будет скопировать значения из description
+но если не нужен то можно и не писать
+-->
+<meta name="Robots" content="индексация для поисковых роботов">
+<!--
+
+
+index – индексировать данную веб-страницу,
+follow – индексировать все веб-страницы, на которые на данной странице есть ссылки,
+all – две верхние директивы одновременно,
+noindex – не индексировать веб-страницу,
+nofollow – не переходить по ссылкам с данной веб-страницы.
+-->
+
+<meta name="Subject" content="тема веб-страницы">
+<!--
+Этот мета-тег предназначен для того, чтобы задавать тип данных, представленных на этой веб-странице.
+По идее, основываясь на данном описании, робот поисковиков должен поместить вашу веб-страницу в ту или иную категорию.
+К большому сожалению, каждый поисковик имеет собственно разработанную систему классификации веб-страниц.
+-->
+
+
+<meta name="Page-type" content="тема веб-страницы">
+<!--
+функционал subject и page-type полностью совпадают по этому можно просто копировать значения из content
+-->
+<meta name="Title" content="заголовок веб-страницы">
+<meta name="Page-topic" content="заголовок веб-страницы">
+<!--
+такая же одинаковая хуйня
+-->
+<meta name="Revisit" content="кол-во дней">
+<!--
+Если информация на вашем сайте часто обновляется, то этот мета-тег очень важен для вас.
+Он информирует роботов поисковых систем, через сколько дней им следует переиндексировать данную веб-страницу.
+Существует альтернативный мета-тег – revisit-after, который полностью идентичен данному мета-тегу, однако используется реже.
+-->
+<meta name="author" content="John Doe">
+
+
+<!--
+типо указываетя автор, наверное нужно для блогов и индексации по людяи
+
+-->
+<meta http-equiv="refresh" content="120">
+<!--как часто будет обновляться сайт-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+вот эта хуйня очень важна
+если не будет написанна то сайт будет отображаться на телефоне как кусок говна из 2010
+а если поставил то ты молодец держри пирожок и глазам будет приятно
+
+-->
+
+
+  <link rel="stylesheet" href="1 style.css">
+<title>Re deleted rpoject</title>
+
+<!--
+head идет до body после обявления html
+
+title - это как будет называться наш сайт во вкладке
+и как он будет показыватсья в поиске в браузере
+
+также style обявляется после title в head
+ style - как корманный css, но для удобства лучше будет делать на него ссылку
+
+
+
+-->
+
+
+</head>
+<body>
+  <nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/jquery/">jQuery</a>
+  </nav>
+<!--
+ну тут все логично
+nav используетсядля навигации и тд
+
+конечно можно обойти и без него, но некоторые хуйни его используют
+и по этому лучше хотя бы для основной навигации использовать
+
+
+-->
+
+
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+<p class="rrr">My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<!--
+aside используется для сносок вырезок и тд
+если его не стилизовать он конечно будет выглядеть как обычный текст,
+
+-->
+
+<form>
+  <input type="checkbox" id="html" name="fav_language" value="HTML">
+   <label for="html">HTML</label><br>
+   <input type="checkbox" id="css" name="fav_language" value="CSS">
+   <label for="css">CSS</label><br>
+   <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+
+   <label for="javascript">JavaScript</label><br>
+     <input type="submit" value="Submit">
+</form>
+<!--
+на сколько я понял, когда мы пишем тег где текст не предусмотрен, то тут нам поможет тег label
+тогда мы ставим АЙДИ для инпута и потом уже пишем label и спокойно можно писать текста
+также в чекбоксах тег label станет как и сам чекбокс который можно выбирать
+
+-->
+
+<form action="/action_page.php" target="_blank" method="post" autocomplete="on">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<!--
+тег action нужен непосредственно что бы собирать пользовательские данные
+которые пользователь вводит в полях для заполнения
+
+ну и как с ссылками тут работает таргет, т.к. мы де куда то отправляем данные
+и после подтверждения формы люди должны че то увидеть где то, то поместить
+"здравтсвутйе, ваши данные приняты, чекайте почту"
+
+autocomplete - автозаполнение на примере уже введенных форм
+
+novalidate - Отменяет встроенную проверку данных введенных пользователем в форме на корректность
+
+
+
+<input> - какой тип данных мы будем вводить
+<label> - что у на будет приписываться когда мы будем вводить
+
+<select> - выпадающий список / выбор из предложенного списка
+option - предвыбранный элеменет из списка select
+size - еще один подсос для select, устанавливает сколько вариантогв будет видно за раз
+multiple - разрешает выбирать сразу несколько вариантов из списка с зажатым CTRL
+<optgroup> - загаловок в выпадающем списке
+
+
+дополнение - если стоит size или multiple, то список будет заранее выведен,
+также как и если один из них будет выведен, то список также будет висеть
+а если обоих не будет, то будет выведено одно значение, а ывбрано первое по дефолту
+
+<textarea> - текст для ввода как для отзыва, создается как iframe с параметрами ширины и длинны
+только ширина - cols - ширина в буквах
+а высота - rows - количество строчек
+
+<button> - кнопка
+<fieldset> - установка пространства с рамкой для ввода данных
+<legend> - название рамки
+<datalist> - более пиздатый аналог select
+если в случае select мы выбираем уже из заготовленных вариантов, то в datalist иы можем вписать еще и свой
+<output> - используется в расчетах и выдается значение от используемых данных
+
+
+<br>
+-->
+
+
+
+
+<pre id="try_svg">
+  What is SVG?
+SVG stands for Scalable Vector Graphics
+SVG is used to define graphics for the Web
+SVG is a W3C recommendation
+</pre>
+<br><br><br><br><br><br><br>
+<svg>
+<circle cx="50" cy="50" r="40" stroke="green" stroke-width='4' fill="yellow">
+</svg>
+
+<!--
+
+СИНИЙ ПРЯМОУГЛОЬНИК
+
+<svg width="400" height="100">
+  <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+</svg>
+
+
+КРАСНЫЙ КВАДРАТ
+
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+</svg>
+
+
+ЛАЙМОВАЯ ЗВЕЗДА
+
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+
+
+ЛОГО СВОГ С ГРАДИЕНТОМ
+
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<input type="button"><br> <!--кнопка на которую можно что то забиндить-->
+<input type="checkbox"><br><!-- выбор из несолкьких вариантов -->
+<input type="color"><br><!-- выбор цвета, выборка зависит от браузера мне кажется-->
+<input type="date"><br><!--выбор даты дд.мм.гггг-->
+<input type="datetime-local"><br><!-- тоже самое + выбор времени -->
+<input type="email"><br><!--вписать почту-->
+<input type="file"><br><!--выбрать файл + ''отправить'' уже есть -->
+
+<input type="hidden"><br><!-- кароче спрятанная залупа нужна дял самых админов-->
+<input type="image"><br><!-- картинка, а хули тут еще говорить-->
+<input type="month"><br><!--выбрать месяц + год-->
+<input type="number"><br><!--выбор числа-->
+<input type="password"><br><!--можешь вводить что угодно, оно все равно скрыто звездочками ******-->
+<input type="radio"><br><!-- чекбокс выбор один из нескольких-->
+<input type="range"><br><!-- выбор из строки с помощью прокрутки-->
+<input type="reset"><br><!--кнопка сбросить, скорее всего нужно привязывать-->
+<input type="search"><br><!-- поиск, ну типо форма для ввода слова -->
+<input type="submit"><br><!--кнопка подтвердить-->
+<input type="tel"><br><!-- форма для номера телефона-->
+<input type="text"><br><!--ну хули говорить, тут только текст-->
+<input type="time"><br><!--выбор времени-->
+<input type="url"><br><!-- ввод для сайта, но также можно ввожить любую залупу-->
+<input type="week"><br><!--выбор недели-->
+
+<br><br><br><br><br><br><br><br>
+<!--
+value - предустанавлвиает значение в заданную графу
+то есть при
+
+readonly - такое же как предыдущее только предустановка исчезнет посел первой введеной букве
+
+disabled - не знаю нахуя но поел будет не активно
+
+size - увеличение поля
+
+maxlength - максималоное кол-во вводимых символов
+min max - устанавливает значения краев кол-ва символовц
+
+multiple - разрешает выбирать сразу несколько вариантов из списка с зажатым CTRL
+
+pattern - устанавливает правило в зависимости откоторого должны вводиться дданные
+pattern="[A-Za-z]{3}"
+
+placeholder - устанавливает исчезающий пример для заполнения формы
+placeholder="123-45-678"
+
+required  - вводиться просто само по себе, отмечает поле без заполнения которого пользователь не сможет нажать на кнопку
+
+step - устанавливает шаг в зависимости от которого будет выбираться значение
+step="3"
+
+autofocus - автоматически нажимает курсором на свое поле
+
+-->
+
+
+<!--
+formaction - данные отправляются на отдельный сайт
+если указан action и formaction то action будет игнорироваться и все будет отправляться на formaction
+
+-->
+
+
+
+
+
+
+
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
+<!--
+<canvas> - используется для выведения графики
+и в теории можно рисовать выводить игры и гифки, но для этого нужен JS
+-->
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+</script>
+
+
+<!--  НУЖНОЕ РАЗКОМЕНТИТЬ
+КРУГ
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.stroke();
+</script>
+
+
+ТЕКСТ
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World", 10, 50);
+</script>
+
+
+ТЕКСТ С ДОП ФОРМАТИРОВАНИЕМ
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Hello World", 10, 50);
+</script>
+
+
+ЗАТУХАНИЕ С ЛЕВОЙ СТОРОНЫ
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+</script>
+
+
+ВИНЬЕТКА ЗАТУХАНИЕ
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+</script>
+
+
+ЗАПОЛНЕНИЕ КАНВАСА КАРТИНКОЙ
+
+<p>Image to use:</p>
+<img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
+
+<p>Canvas to fill:</p>
+<canvas id="myCanvas" width="250" height="300"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<p><button onclick="myCanvas()">Try it</button></p>
+
+<script>
+function myCanvas() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("scream");
+  ctx.drawImage(img,10,10);
+}
+</script>
+
+
+
+
+
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+
+
+
+<code>
+x=5;
+y=6;
+z=x+y;
+
+</code>
+<!--
+code - аналог pre за исключением того что все что внутри этого тега будет идти как текст,
+даже теги переменные и тд
+
+
+-->
+<p>
+save document by pressing <kbd>Ctrl + S</kbd>
+</p>
+<!--
+kbd
+убирает все форматирование и служит для выделения текста как стандартного
+и идет от сокращения Keyboard INPUT - ввод с клаиатуры
+
+
+samp - аналог <kbd>
+
+<var> - курсив
+-->
+
+
+
+
+
+<section>
+<h1>WWF</h1>
+<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+<h1>WWF's Panda symbol</h1>
+<p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+
+
+
+<article>
+<h2>Google Chrome</h2>
+<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+
+<article>
+<h2>Mozilla Firefox</h2>
+<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+</article>
+
+<article>
+<h2>Microsoft Edge</h2>
+<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+</article>
+
+
+<!--
+
+Раздел (section) является частью чего-то. Статья (article) - это отдельная вещь.
+-->
+
+
+<p><a href="test.html" target="_blank">тест артикля и </a></p>
+
+
+
+
+
+
+
+
+
+<h1 id="myHeader">My Header</h1>
+
+<a href='#end'>Jump in the void</a>
+
+<br>
+
+
+<iframe src='C:\Users\Super\Desktop\project\2 index.html' title='another project' id='sproject' name="fproject">
+</iframe>
+
+<!--
+ifreame - показываем сайт в сайте что бы ты видел сайт пока смотришь сайт
+title тут не знаю нахуя, но пусть будет
+id нужен что бы потом его красиов офосрить и тд
+name - что бы к этой залупе потом обращаться можно было
+
+тут как и с картинкой нужно писать сурс=src что бы iframe знал откуда что береться
+
+при чем браться эта дупа будет из нашего же проекта
+
+
+
+-->
+
+
+
+
+<!--
+можно этот iframe менять за счет ссылок
+и по сути мы пишет ссылку  href  типо на что у нас iframe менять будет
+а также target типо что оно будет менять
+-->
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+<!--
+кароче picture
+
+контейнер исопльзуется для фоток для разных устройств
+он открывается и закрывается
+
+внутри мы пишем ресурс для каждого устройства
+указывая для какого девайса какое фото будет показанно
+
+пишем сурс и в нем обьединенный src и set
+это мы сложно указываем фотку
+
+потом в медиа уже непосрежственно пишем для какой ширины пикселей все это будет показываться
+
+-->
+
+<h1 style="font-size:1vw">Hello World</h1>
+<!--
+как обычно пишем заголовок
+да только вот размер шрифта у нас идет не как обычно в пикселлях или процентах
+а в view-width(vw) - показываемая ширина
+это уже отношение к экрану
+
+-->
+<br>
+<!--
+
+<div class="top"><p>top menu</p></div>
+<div class="left"><p>left menu</p></div>
+<div class="main"><p>main menu</p></div>
+<div class="right"><p>right menu</p></div>
+<div class="bottom"><p>bottom menu</p></div>
+-->
+<br>
+<br><br>
+
+
+
+
+
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <h1>Hello World</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+  </div>
+
+  <div class="main">
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br>
+
+
+
+<p id="demo">srdhgreh</p>
+
+<script>
+function newchange(){
+document.getElementById("demo").innerHTML = "Hello JavaScript!";}
+</script>
+
+<noscript>sorry, you are dolbaeb</noscript>
+<button onclick="newchange()">change text</button>
+
+
+
+<!--
+запускать JavaScript и функцию от него можно как при нажатии кнопкой так и автоматически
+
+через кнопку пример выше
+
+а если автоматически
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+ноу скрипт нужен на всякий случай если пользователь добаеб и или его браузер хуйня и нужно показать что все хуйня
+
+
+
+
+
+-->
+
+<br>
+
+<img src="https://www.w3schools.com/images/picture.jpg" title="Mountain" alt="Mountain">
+
+<h1>описание фоток</h1>
+
+<!--
+<img src="picture.jpg">	фото лежит в том же каталоге где и данная страница
+<img src="images/picture.jpg">	фото лежит в папке images там же где и текущая страцица
+<img src="/images/picture.jpg">	если в начале стоит / то путь будет указываться от корня текущего сайта
+<img src="../picture.jpg"> фото лежит в каталоге на уровень вверх
+<img src="https://www.w3schools.com/images/picture.jpg"> тут уже понятно, картинка будет браться из инета
+
+также можно дописать style='max-width:100%; height:auto;'
+получается следующая штука
+
+из ха максимальной ширины на всех устройствах оно будет максимально растянуто
+но типо по ширине, но что бы фотка не растягивалась в гавно, ставиться высота auto
+пи тогда она будет растянута по ширине, но высота будет ок
+-->
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+
+
+
+
+<br><br><br><br><br><br><br><br>
+<h1 id="firstid">Hello everyone</h1>
+
+<button onclick="change_text()">Suicide</button>
+
+<script>
+function change_text() {
+document.getElementById("firstid").innerHTML = "Goodbye world";
+}
+</script>
+
+
+<button onclick="de_change_text()">De Suicide</button>
+
+<script>
+function de_change_text() {
+document.getElementById("firstid").innerHTML = "Hello everyone";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>My First Heading</h1>
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+<p>My first paragraph.</p>
+<a href="https://web.whatsapp.com/"  target=" ">whatsup</a>
+<br>
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+<br><br><br><br>
+
+<img src='C:\Users\Super\Desktop\project\photo.jpg' alt='foto stola' title="foto stola" usemap="#1workmap">
+<map name="#1workmap">
+<area shape="rect" coords="34,44,270,350" alt='pc' href="pc.htm" onclick="PCAlert()" >
+<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm" onclick="PCAlert">
+<area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm" onclick="PCAlert">
+
+
+</map>
+
+<script>
+function  PCAlert() {
+alert("Dont touch my PC")
+
+}
+</script>
+
+<!--
+ПЕРВОЕ карооче блять, когда обявляешь функцию, то не забудь в конце названия функции
+поставиить круглые скобки, иначе нихуя работать не будет
+
+
+
+-->
+
+
+
+
+<table style="width:30%">
+  <caption>Monylt Savings</caption>
+<!--
+  <tr>
+    <th><b>Month</b></th>
+    <th>Savings</th>
+  </tr>
+-->
+
+  <tr text-aling='center'>
+    <td >January</td>
+   <td>$100</td>
+    <td></td>
+    <td></td>
+  </tr>
+
+
+  <tr>
+    <td>Febtuary</td>
+    <td>$50</td>
+    <td>1</td>
+    <td>1</td>
+
+<tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+</tr>
+
+<tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+
+
+
+
+
+</tr>
+
+
+</table>
+
+
+
+<ol type='I' start='50'>
+  <li>first order</li>
+  <li>second order</li>
+  <li>third order</li>
+
+</ol>
+
+<!--
+ol -  обявления списка с описаниями
+
+ul - строка без порядкового номера - просто точка перед словами
+li - строка с порядковым номером
+
+list-style-type - как будут отображаться точки
+
+-->
+
+<ul>
+  <li>cofee</li>
+
+  <li>tea
+    <ul>
+      <li>black tea</li>
+      <li>green tea</li>
+      <li>brown tea</li>
+    </ul>
+  </li>
+<li>Milk</li>
+  <li>cola</li>
+
+</ul>
+
+
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+
+<!--
+dl - обявления списка с описаниями
+dt - привязывается к dd
+
+dt - термин
+dd - описание термина
+
+без dd быдет обычный список
+
+
+-->
+
+
+<div class='menu'>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+
+<!--
+если мы хотим сделать вот такую красивую хуйню по типу меню
+то мы все это запихиваем в блок <div class='название класса'>
+и что бы потом в css можно было править конкретно только этй хуйню
+нам нужно перед каждым тегом ставить название класса через точку
+.class li {а тут уже css}
+-->
+<br>
+
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+
+<p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+<!--
+span предназначен для выделения конкретных элементов в параграфе
+и их стилизации
+
+
+-->
+
+
+
+
+<h3 id='end'>THE END</h3>
+
+
+</body>
+</html>
